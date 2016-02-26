@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<abapGit version="v0.2-alpha">
+ <T100A>
+  <ARBGB>ZAIM_EXTERNAL_TOOL</ARBGB>
+  <MASTERLANG>E</MASTERLANG>
+  <APPLCLASS></APPLCLASS>
+  <RESPUSER></RESPUSER>
+  <LASTUSER></LASTUSER>
+  <LDATE>00000000</LDATE>
+  <LTIME>000000</LTIME>
+  <STEXT>Generic messages from external tools</STEXT>
+ </T100A>
+ <T100>
+  <T100>
+   <SPRSL>E</SPRSL>
+   <ARBGB>ZAIM_EXTERNAL_TOOL</ARBGB>
+   <MSGNR>001</MSGNR>
+   <TEXT>Invalid format for task-identifier</TEXT>
+  </T100>
+ </T100>
+</abapGit>

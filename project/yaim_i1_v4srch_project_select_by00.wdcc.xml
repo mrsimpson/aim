@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<abapGit version="v0.2-alpha">
+ <WDY_CONFIG_DATA>
+  <FieldCatalog>
+   <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+    <asx:values>
+     <FIELD_CATALOG>
+      <item>
+       <POS>1</POS>
+       <NAME>CONFIG_ID</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>32</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>2</POS>
+       <NAME>CONFIG_TYPE</NAME>
+       <TYPE_KIND>N</TYPE_KIND>
+       <LENGTH>2</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>3</POS>
+       <NAME>CONFIG_VAR</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>6</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>4</POS>
+       <NAME>COMPONENT</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>30</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>5</POS>
+       <NAME>CONFIG_IDPAR</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>32</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>6</POS>
+       <NAME>CONFIG_TYPEPAR</NAME>
+       <TYPE_KIND>N</TYPE_KIND>
+       <LENGTH>2</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>7</POS>
+       <NAME>CONFIG_VARPAR</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>6</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>8</POS>
+       <NAME>AUTHOR</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>12</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>9</POS>
+       <NAME>CREATEDON</NAME>
+       <TYPE_KIND>D</TYPE_KIND>
+       <LENGTH>8</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>10</POS>
+       <NAME>CHANGEDBY</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>12</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>11</POS>
+       <NAME>CHANGEDON</NAME>
+       <TYPE_KIND>D</TYPE_KIND>
+       <LENGTH>8</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>12</POS>
+       <NAME>CONTENT</NAME>
+       <TYPE_KIND>g</TYPE_KIND>
+       <LENGTH>0</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>13</POS>
+       <NAME>XCONTENT</NAME>
+       <TYPE_KIND>y</TYPE_KIND>
+       <LENGTH>0</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>14</POS>
+       <NAME>RELID</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>4</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+     </FIELD_CATALOG>
+    </asx:values>
+   </asx:abap>
+  </FieldCatalog>
+  <TableContent>
+   <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+    <asx:values>
+     <DATA_TAB>
+      <WDY_CONFIG_DATA>
+       <CONFIG_ID>YAIM_I1_V4SRCH_PROJECT_SELECT_BY</CONFIG_ID>
+       <CONFIG_TYPE>00</CONFIG_TYPE>
+       <CONFIG_VAR/>
+       <COMPONENT>FPM_SEARCH_UIBB</COMPONENT>
+       <CONFIG_IDPAR/>
+       <CONFIG_TYPEPAR>00</CONFIG_TYPEPAR>
+       <CONFIG_VARPAR/>
+       <AUTHOR>DB1695E</AUTHOR>
+       <CREATEDON>2015-02-20</CREATEDON>
+       <CHANGEDBY>DB1695E</CHANGEDBY>
+       <CHANGEDON>2015-02-20</CHANGEDON>
+       <CONTENT/>
+       <XCONTENT>PD94bWwgdmVyc2lvbj0iMS4wIj8+PENvbXBvbmVudCBOYW1lPSJGUE1fU0VBUkNIX1VJQkIiIENv
+bmZJZD0iWUFJTV9JMV9WNFNSQ0hfUFJPSkVDVF9TRUxFQ1RfQlkiIENvbmZUeXBlPSIwMCIgQ29u
+ZlZhcj0iIj48Tm9kZSBOYW1lPSJDT05GSUdVUkFUSU9OX0NPTlRFWFQiIFNpbXBsZUZvcm1hdD0i
+dHJ1ZSI+PEl0ZW0gSW5kZXg9IjAwMDAwMSIgU2ltcGxlRm9ybWF0PSJ0cnVlIj48Tm9kZSBOYW1l
+PSJTRUFSQ0giIFNpbXBsZUZvcm1hdD0idHJ1ZSI+PEl0ZW0gSW5kZXg9IjAwMDAwMSIgU2ltcGxl
+Rm9ybWF0PSJ0cnVlIj48RkVFREVSPkNMX0dVSUJCX0JPTF9EUVVFUlk8L0ZFRURFUj48TlVNQkVS
+X09GX1FVRVJZX0xJTkVTPjQgPC9OVU1CRVJfT0ZfUVVFUllfTElORVM+PFJFU1VMVF9OVU1CRVJf
+T0ZfVklTSUJMRV9ST1dTPjEwIDwvUkVTVUxUX05VTUJFUl9PRl9WSVNJQkxFX1JPV1M+PFNBVkVf
+U0VBUkNIRVM+PC9TQVZFX1NFQVJDSEVTPjxTSE9XX0JVVFRPTl9TRUFSQ0g+PC9TSE9XX0JVVFRP
+Tl9TRUFSQ0g+PFNIT1dfQlVUVE9OX0NMRUFSPjwvU0hPV19CVVRUT05fQ0xFQVI+PEVYQ0xVREVf
+Q1JJVEVSSUFTPjwvRVhDTFVERV9DUklURVJJQVM+PFNIT1dfQlVUVE9OX1JFU0VUPjwvU0hPV19C
+VVRUT05fUkVTRVQ+PE1BWF9OVU1CRVJfT0ZfUkVTVUxUUz4xMDAgPC9NQVhfTlVNQkVSX09GX1JF
+U1VMVFM+PFNIT1dfTUFYX05VTV9SRVNVTFRfRklFTEQ+PC9TSE9XX01BWF9OVU1fUkVTVUxUX0ZJ
+RUxEPjxHUk9VUF9TQU1FX0NSSVRFUklBPlg8L0dST1VQX1NBTUVfQ1JJVEVSSUE+PEFMTE9XX1BF
+UlNPTkFMSVpBVElPTj48L0FMTE9XX1BFUlNPTkFMSVpBVElPTj48QVJJQV9MQU5ETUFSSz48L0FS
+SUFfTEFORE1BUks+PE5vZGUgTmFtZT0iUEFSQU1FVEVSIiBTaW1wbGVGb3JtYXQ9InRydWUiPjxJ
+dGVtIEluZGV4PSIwMDAwMDEiIFNpbXBsZUZvcm1hdD0idHJ1ZSI+PE5BTUUgRmluYWw9IjUgIj5D
+T01QT05FTlRfTkFNRTwvTkFNRT48VkFMVUU+WUFJTTwvVkFMVUU+PC9JdGVtPjxJdGVtIEluZGV4
+PSIwMDAwMDIiIFNpbXBsZUZvcm1hdD0idHJ1ZSI+PE5BTUUgRmluYWw9IjUgIj5PQkpFQ1RfTkFN
+RTwvTkFNRT48VkFMVUU+UFJPSkVDVF9TRUxFQ1RfQllfRUxFTUVOVFM8L1ZBTFVFPjwvSXRlbT48
+L05vZGU+PE5vZGUgTmFtZT0iU0VUVElOR1MiIFNpbXBsZUZvcm1hdD0idHJ1ZSI+PEl0ZW0gSW5k
+ZXg9IjAwMDAwMSIgU2ltcGxlRm9ybWF0PSJ0cnVlIj48TE9DQVRJT05fU0FWRURfU0VBUkNIRVM+
+PC9MT0NBVElPTl9TQVZFRF9TRUFSQ0hFUz48Q0hFQ0tfTUFOREFUT1JZPjwvQ0hFQ0tfTUFOREFU
+T1JZPjwvSXRlbT48L05vZGU+PE5vZGUgTmFtZT0iQVRUUklCVVRFUyIgU2ltcGxlRm9ybWF0PSJ0
+cnVlIj48SXRlbSBJbmRleD0iMDAwMDAxIiBTaW1wbGVGb3JtYXQ9InRydWUiPjxFTEVNRU5UX0lE
+IEZpbmFsPSI1ICI+X0dFTlBfNTRENTg2Q0EzODJBMjYyN0UxMDAwMDAwMEFCNzhFODY8L0VMRU1F
+TlRfSUQ+PE5BTUU+QUJCUkVWSUFUSU9OPC9OQU1FPjxJTkRFWD4xIDwvSU5ERVg+PFRFWFQgVHJh
+bnNsPSJ0cnVlIj48L1RFWFQ+PERFRkFVTFRfT1BFUkFUT1I+PC9ERUZBVUxUX09QRVJBVE9SPjxH
+Uk9VUF9JRF9BVFRSPjwvR1JPVVBfSURfQVRUUj48SU5QVVRfUFJPTVBUIFRyYW5zbD0idHJ1ZSI+
+PC9JTlBVVF9QUk9NUFQ+PC9JdGVtPjwvTm9kZT48Tm9kZSBOYW1lPSJSRVNVTFRfR1VJQkJfTElT
+VCIgU2ltcGxlRm9ybWF0PSJ0cnVlIj48SXRlbSBJbmRleD0iMDAwMDAxIiBTaW1wbGVGb3JtYXQ9
+InRydWUiPjxDT01QT05FTlQ+RlBNX0xJU1RfVUlCQl9BVFM8L0NPTVBPTkVOVD48SU5URVJGQUNF
+X1ZJRVc+TElTVF9XSU5ET1c8L0lOVEVSRkFDRV9WSUVXPjxDT05GSUdfSUQ+WUFJTV9JMV9WNFNS
+RVNfUFJPSkVDVF9ST09UPC9DT05GSUdfSUQ+PENPTkZJR19UWVBFPjwvQ09ORklHX1RZUEU+PENP
+TkZJR19WQVI+PC9DT05GSUdfVkFSPjxJTlNUQU5DRV9JRD48L0lOU1RBTkNFX0lEPjxISURERU4+
+PC9ISURERU4+PE5FRURTX1NUUkVUQ0hJTkc+PC9ORUVEU19TVFJFVENISU5HPjwvSXRlbT48L05v
+ZGU+PC9JdGVtPjwvTm9kZT48L0l0ZW0+PC9Ob2RlPjwvQ29tcG9uZW50Pg==</XCONTENT>
+       <RELID/>
+      </WDY_CONFIG_DATA>
+     </DATA_TAB>
+    </asx:values>
+   </asx:abap>
+  </TableContent>
+ </WDY_CONFIG_DATA>
+ <WDY_CONF_DELC>
+  <FieldCatalog>
+   <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+    <asx:values>
+     <FIELD_CATALOG>
+      <item>
+       <POS>1</POS>
+       <NAME>CONFIG_ID</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>32</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>2</POS>
+       <NAME>CONFIG_TYPE</NAME>
+       <TYPE_KIND>N</TYPE_KIND>
+       <LENGTH>2</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>3</POS>
+       <NAME>CONFIG_VAR</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>6</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>4</POS>
+       <NAME>ORIG_CONFIG_TYPE</NAME>
+       <TYPE_KIND>N</TYPE_KIND>
+       <LENGTH>2</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>5</POS>
+       <NAME>ORIG_CONFIG_ID</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>32</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>6</POS>
+       <NAME>ORIG_CONFIG_VAR</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>6</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+      <item>
+       <POS>7</POS>
+       <NAME>DELEG_HIDDEN</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>1</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+     </FIELD_CATALOG>
+    </asx:values>
+   </asx:abap>
+  </FieldCatalog>
+  <TableContent>
+   <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+    <asx:values>
+     <DATA_TAB/>
+    </asx:values>
+   </asx:abap>
+  </TableContent>
+ </WDY_CONF_DELC>
+ <WDY_CONFIG_DATT>
+  <FieldCatalog>
+   <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+    <asx:values>
+     <FIELD_CATALOG>
+      <item>
+       <POS>1</POS>
+       <NAME>CONFIG_ID</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>32</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>2</POS>
+       <NAME>CONFIG_TYPE</NAME>
+       <TYPE_KIND>N</TYPE_KIND>
+       <LENGTH>2</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>3</POS>
+       <NAME>CONFIG_VAR</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>6</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>4</POS>
+       <NAME>LANGU</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>1</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>5</POS>
+       <NAME>DESCRIPTION</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>60</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+     </FIELD_CATALOG>
+    </asx:values>
+   </asx:abap>
+  </FieldCatalog>
+  <TableContent>
+   <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+    <asx:values>
+     <DATA_TAB>
+      <WDY_CONFIG_DATT>
+       <CONFIG_ID>YAIM_I1_V4SRCH_PROJECT_SELECT_BY</CONFIG_ID>
+       <CONFIG_TYPE>00</CONFIG_TYPE>
+       <CONFIG_VAR/>
+       <LANGU>E</LANGU>
+       <DESCRIPTION>Search: PROJECT_SELECT_BY_ELEMENTS</DESCRIPTION>
+      </WDY_CONFIG_DATT>
+     </DATA_TAB>
+    </asx:values>
+   </asx:abap>
+  </TableContent>
+ </WDY_CONFIG_DATT>
+ <WDY_CONFIG_COMPT>
+  <FieldCatalog>
+   <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+    <asx:values>
+     <FIELD_CATALOG>
+      <item>
+       <POS>1</POS>
+       <NAME>CONFIG_ID</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>32</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>2</POS>
+       <NAME>CONFIG_TYPE</NAME>
+       <TYPE_KIND>N</TYPE_KIND>
+       <LENGTH>2</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>3</POS>
+       <NAME>CONFIG_VAR</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>6</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>4</POS>
+       <NAME>LANGU</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>1</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>5</POS>
+       <NAME>TEXT_ID</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>6</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY>X</IS_KEY>
+      </item>
+      <item>
+       <POS>6</POS>
+       <NAME>DESCRIPTION</NAME>
+       <TYPE_KIND>C</TYPE_KIND>
+       <LENGTH>255</LENGTH>
+       <DECIMALS>0</DECIMALS>
+       <IS_KEY/>
+      </item>
+     </FIELD_CATALOG>
+    </asx:values>
+   </asx:abap>
+  </FieldCatalog>
+  <TableContent>
+   <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+    <asx:values>
+     <DATA_TAB/>
+    </asx:values>
+   </asx:abap>
+  </TableContent>
+ </WDY_CONFIG_COMPT>
+</abapGit>
