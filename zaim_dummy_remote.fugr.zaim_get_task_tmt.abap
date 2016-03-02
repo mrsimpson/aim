@@ -16,7 +16,7 @@ CLEAR: ev_title, ev_severity, ev_description, ev_state, ev_processor.
     WHEN '1'.
       ev_title = 'System not responding at all'.
       ev_severity = 'L'.
-      ev_description = |Performance really sucks. I clicked the "shutdown"-button and now, the system does not respond anymore|.
+      ev_description = |Performance really sucks. I clicked the "shutdow
       ev_state = '2'.
       ev_processor = 'Dev Eloper'.
     WHEN OTHERS.

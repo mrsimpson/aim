@@ -18,7 +18,7 @@ FUNCTION ZAIM_GET_TASK_BUGZILLA.
     WHEN '1'.
       ev_title = 'We need more coffee'.
       ev_severity = 'Very High'.
-      ev_description = |We're running out of coffee. This is a serious challenge to our test-progress. Please help|.
+      ev_description = |We're running out of coffee. This is a serious c
       ev_state = 'New'.
       ev_processor = 'Dev Eloper'.
       ev_bug_not_found = abap_false.

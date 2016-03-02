@@ -42,60 +42,12 @@ ENDCLASS.
 CLASS ZCL_AIM_ABSTR_EXT_TOOL_ADAPTER IMPLEMENTATION.
 
 
-METHOD check_remote_connection.
-    "This is only a stub which might be redefined
-  ENDMETHOD.
 
 
-METHOD map_full_name_to_user.
-
-    SELECT SINGLE bname FROM
-            user_addrp
-            INTO @rv_user_name
-            WHERE   name_text  = @iv_person_full_name.
-
-  ENDMETHOD.
 
 
-METHOD validate_reference_format.
-*    ensures only alphanumeric characters are used, c. f. http://regexlib.com/REDetails.aspx?regexp_id=1014
-    IF iv_ext_reference_external_id NE |{ match( val = iv_ext_reference_external_id regex = '^[a-zA-Z0-9]+$' ) }|.
-      RAISE EXCEPTION TYPE zcx_aim_external_tool
-        EXPORTING
-          textid = zcx_aim_external_tool=>invalid_id_format.
-    ENDIF.
-  ENDMETHOD.
 
 
-METHOD zif_aim_external_tool_adapter~check_existence.
-*    Default implementation: Do a complete remote-retrieval.
-*    This method might be improved with respect to performance using a redefinition
-    get_task_from_ext_system(
-      EXPORTING
-        is_ext_reference      = is_ext_reference
-      IMPORTING
-        ev_exists             = ev_exists
-    ).
-  ENDMETHOD.
 
 
-METHOD zif_aim_external_tool_adapter~get_task.
-
-*    Callback for checking that the external ID has the proper format
-    validate_reference_format( is_ext_reference-external_id ).
-
-*    get the remote content
-    get_task_from_ext_system(
-      EXPORTING
-        is_ext_reference      = is_ext_reference
-      IMPORTING
-        ev_exists             = ev_exists
-        ev_title              = ev_title
-        ev_priority           = ev_priority
-        ev_description        = ev_description
-        ev_status             = ev_status
-        ev_assignee           = ev_assignee
-    ).
-
-  ENDMETHOD.
 ENDCLASS.
